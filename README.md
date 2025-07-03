@@ -1,3 +1,3 @@
-# landscape-of-prokaryotic-provirus
+# landscape-of-prokaryotic-proviruses
 
 # developing ......
