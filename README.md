@@ -73,8 +73,21 @@ Mujie Zhang, Yali Hao, Yi Yi, Yecheng Wang, Taoliang Zhang, Xiang Xiao, Huahua J
 </details>
 
 ### 4. Homologous sequence coverage (HSC) analysis
+We found extensive sharing of BDPs and BUPs at the genus and family levels. Within the same viral cluster, the genome size of BDPs was consistently larger than that of BUPs. We hypothesize that a significant number of BUPs degenerated from BDPs. To validate this, we conducted HSC analysis, as illustrated below, using the following algorithm:
+
 ![HSC-analysis](https://github.com/user-attachments/assets/192421c9-9f16-4029-ace2-e8ba11da5b8f)
 
+```
+# take gVC_1 for example
+# step1. perform diamond blastp between BDPs-BUPs and between BDPs-BDPs in gVC_1
+diamond makedb -in gvc1_BDPs.faa --db gvc1_BDPs
+diamond makedb -in gvc1_BUPs.faa --db gvc1_BUPs
+diamond blastp --query gvc1_BDPs.faa --db gvc1_BDPs.dmnd --out gvc_1_BDP_vs_BDP_blastp.tsv --outfmt 6 --evalue 1e-5 --max-target-seqs 10000000 --query-cover 50 --subject-cover 50
+diamond blastp --query gvc1_BDPs.faa --db gvc1_BUPs.dmnd --out gvc_1_BDP_vs_BUP_blastp.tsv --outfmt 6 --evalue 1e-5 --max-target-seqs 10000000 --query-cover 50 --subject-cover 50
+
+# stp2. calculate HSC
+
+```
 
 ### 5. Conservation analysis of att.
 - **for att sequence conservation**: extract the att sequences of a certain viral cluster and perform CD-HIT-EST
