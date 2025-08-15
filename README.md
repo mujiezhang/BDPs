@@ -93,7 +93,7 @@ diamond blastp --db ncbi-serine-tyrosine-integrase.dmnd --threads 64 --out BDPs-
 
 ### 7. Functional gene identification
 
-We download VFDB setA for VFG detection from [https://www.mgc.ac.cn/VFs/download.htm](https://www.mgc.ac.cn/VFs/download.htm) and SARG for ARG detection from [https://smile.hku.hk/ARGs/Indexing/download](https://smile.hku.hk/ARGs/Indexing/download)
+We download VFDB setA for VFG detection from [**https://www.mgc.ac.cn/VFs/download.htm**](https://www.mgc.ac.cn/VFs/download.htm) and SARG for ARG detection from [**https://smile.hku.hk/ARGs/Indexing/download**](https://smile.hku.hk/ARGs/Indexing/download)
 ```
 # for VFG
 diamond blastp --threads 64 --db VFDB_setA_pro.dmnd --max-target-seqs 1 --out BDPs-vs-VFDB_setA-id-80-qcov-scov50-e-5.tsv --evalue 1e-5 --more-sensitive --query all_BDPs.faa --id 80 --query-cover 50 --subject-cover 50
