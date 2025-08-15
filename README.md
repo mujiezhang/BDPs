@@ -85,7 +85,11 @@ diamond makedb -in gvc1_BUPs.faa --db gvc1_BUPs
 diamond blastp --query gvc1_BDPs.faa --db gvc1_BDPs.dmnd --out gvc_1_BDP_vs_BDP_blastp.tsv --outfmt 6 --evalue 1e-5 --max-target-seqs 10000000 --query-cover 50 --subject-cover 50
 diamond blastp --query gvc1_BDPs.faa --db gvc1_BUPs.dmnd --out gvc_1_BDP_vs_BUP_blastp.tsv --outfmt 6 --evalue 1e-5 --max-target-seqs 10000000 --query-cover 50 --subject-cover 50
 
-# stp2. calculate HSC
+# step2. calculate HSC
+
+
+# step3. get plot data
+
 
 ```
 
