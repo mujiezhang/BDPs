@@ -73,6 +73,9 @@ Mujie Zhang, Yali Hao, Yi Yi, Yecheng Wang, Taoliang Zhang, Xiang Xiao, Huahua J
 </details>
 
 ### 4. Homologous sequence coverage (HSC) analysis
+![HSC-analysis](https://github.com/user-attachments/assets/192421c9-9f16-4029-ace2-e8ba11da5b8f)
+
+
 ### 5. Conservation analysis of att.
 - **for att sequence conservation**: extract the att sequences of a certain viral cluster and perform CD-HIT-EST
   ```
