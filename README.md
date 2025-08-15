@@ -20,7 +20,9 @@ Mujie Zhang, Yali Hao, Yi Yi, Yecheng Wang, Taoliang Zhang, Xiang Xiao, Huahua J
 
 ### 2. Viral Sequence Reverse Mapping (VSRM): construct att positive set
 ### 3. Viral sequences clustering
-#### vOTU clustering based on ANI
+<details>
+<summary><strong>vOTU clustering based on ANI</strong></summary>
+  
 - We clustered vOTUs using the [**CheckV pipeline**](https://bitbucket.org/berkeleylab/checkv/src/master/), based all-versus-all BLASTn search and Leiden algorithm，following MIUViG guidelines (95% average nucleotide identity (ANI); 85% aligned fraction (AF)
   - step1: all-vs-all blastn
     ```
@@ -36,7 +38,12 @@ Mujie Zhang, Yali Hao, Yi Yi, Yecheng Wang, Taoliang Zhang, Xiang Xiao, Huahua J
     python aniclust.py --fna all_virus.fna --ani my_ani.tsv --out my_clusters.tsv --min_ani 95 --min_tcov 85 --min_qcov 0
     ```
 **Reference**: Nayfach S, Camargo A P, Schulz F, et al. CheckV assesses the quality and completeness of metagenome-assembled viral genomes[J]. Nature biotechnology, 2021, 39(5): 578-585.
-#### Genus and Family level clustering based on AAI
+
+</details>
+
+<details>
+<summary><strong>Genus and Family level clustering based on AAI</strong></summary>
+  
 - We performed genus/family clustering using the [**MGV pipeline**](https://github.com/snayfach/MGV/tree/master/aai_cluster) based on all-vs-all BLASTp search and MCL
   - step1: all-vs-all blastp
     ```
@@ -62,11 +69,54 @@ Mujie Zhang, Yali Hao, Yi Yi, Yecheng Wang, Taoliang Zhang, Xiang Xiao, Huahua J
     Note: Adjusted genus filtering to `--min_aai 50` following the parameters in their [**paper**](https://www.nature.com/articles/s41564-021-00928-6)
     
 **Reference**: Nayfach S, Páez-Espino D, Call L, et al. Metagenomic compendium of 189,680 DNA viruses from the human gut microbiome[J]. Nature microbiology, 2021, 6(7): 960-970.
+
+</details>
+
 ### 4. Homologous sequence coverage (HSC) analysis
-### 5. Conservation analysis of att sequence.
+### 5. Conservation analysis of att.
+- **for att sequence conservation**: extract the att sequences of a certain viral cluster and perform CD-HIT-EST
+  ```
+  # take vOTU_1 for example
+  cd-hit-est -i votu_1_att_sequence.fna -o  votu_1_att_sequence_cd-hit-est.txt -c 0.85 -M 0 -T 60 -n 2 -l 4 -d 0 -aS 0.9
+  ```
+- **for att length conservation**: count the number of different att lengths in a certain viral cluster
+
 ### 6. Analysis of integration protein types in proviruses
+```
+# hmmsearch against PF07508 (S-int) and PF00589 (Y-int)
+hmmsearch --tblout all_BDPs_vs_pfam-S-int.tsv --noali --notextw --cut_ga --cpu 64 PF07508.hmm all_BDPs.faa
+hmmsearch --tblout all_BDPs_vs_pfam-Y-int.tsv --noali --notextw --cut_ga --cpu 64 PF00589.hmm all_BDPs.faa
+
+# diamond blastp against S-int and Y-int from NCBI
+diamond blastp --db ncbi-serine-tyrosine-integrase.dmnd --threads 64 --out BDPs-vs-ncbi-S-int-Y-int-qcov-50-scov50-e-0.001.tsv --max-target-seqs 1 --query-cover 50 --subject-cover 50 --query all_BDPs.faa --more-sensitive --outfmt 6
+```
+
 ### 7. Functional gene identification
+
+We download VFDB setA for VFG detection from [https://www.mgc.ac.cn/VFs/download.htm](https://www.mgc.ac.cn/VFs/download.htm) and SARG for ARG detection from [https://smile.hku.hk/ARGs/Indexing/download](https://smile.hku.hk/ARGs/Indexing/download)
+```
+# for VFG
+diamond blastp --threads 64 --db VFDB_setA_pro.dmnd --max-target-seqs 1 --out BDPs-vs-VFDB_setA-id-80-qcov-scov50-e-5.tsv --evalue 1e-5 --more-sensitive --query all_BDPs.faa --id 80 --query-cover 50 --subject-cover 50
+
+# for ARG
+diamond blastp --threads 64 --db 4.SARG_v3.2_20220917_Short_subdatabase.dmnd --max-target-seqs 1 --out BDPs-vs-sarg-id-80-qcov-scov50-e-5.tsv --evalue 1e-5 --more-sensitive --query all_BDPs.faa --id 80 --query-cover 50 --subject-cover 50
+
+# for AMP
+macrel contigs -f all_BDPs.fna -o BDP_AMP_prediction -t 64 --keep-fasta-headers
+
+# for Defense system and Anti-defense system
+defense-finder run -o BDPs-defense-finder -w 20 --db-type gembase --models-dir ~/software/defense-finder -a  all_BDPs.faa
+```
 ### 8. Detection for dark proviruses
+### 9. Protein sharing network analysis
+
+Viral protein sharing networks were constructed using vConTACT2 (v2.0) and the resulting networks were visualized using Cytoscape (v3.8.2) with a prefuse force-directed layout model.
+```
+# prepare input
+vcontact2_gene2genome -p DPs_and_BDP_family.faa -o gene2genome.csv -s Prodigal-FAA
+# run vcontact2
+vcontact2 -r DPs_and_BDP_family.faa.faa -p gene2genome.csv --db None -o DPs_and_BDP_family_vcontact2 -t 64
+```
 
 ## For Figures:
 
