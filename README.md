@@ -19,6 +19,15 @@ Mujie Zhang, Yali Hao, Yi Yi, Yecheng Wang, Taoliang Zhang, Xiang Xiao, Huahua J
 - The ProAct scripts and usage instructions are available at **https://github.com/YaliHao/ProAct** .
 
 ### 2. Viral Sequence Reverse Mapping (VSRM): construct att positive set
+
+  For a given viral genome, if its full-length sequence mapped contiguously to a host genome and the ends of the mapped interval bordered by identical direct repeats (DRs), we designated the DRs as the definitive att site. And we aligned all complete viral genomes from RefSeq to RefSeq bacterial and archaeal genomes using Blastn:
+```
+blastn -db RefSeq_bacterial_and_archaeal_genomes -query all_RefSeq_complete_virus.fna -out RefSeq-complete_virus_vs_bacterial_and_archaeal_genoems_id-95_e-10.txt -perc_identity 95  -outfmt "6 qseqid qlen sseqid slen pident qcovhsp length mismatch gapopen qstart qend sstart send evalue bitscore" -num_threads 64 -evalue 1e-10
+```
+
+  **Note**: Most of the att sequences found in viruses through this method are not located at the ends of the viral genome but rather in the middle, because the majority of viral genomes are circular, and sequencing does not necessarily start exactly at the att site, as shown in the following diagram:
+![att-positive](https://github.com/user-attachments/assets/ae7c6eb9-b145-4a75-bd21-f95ba79bb1ea)
+
 ### 3. Viral sequences clustering
 <details>
 <summary><strong>vOTU clustering based on ANI</strong></summary>
@@ -128,6 +137,8 @@ macrel contigs -f all_BDPs.fna -o BDP_AMP_prediction -t 64 --keep-fasta-headers
 defense-finder run -o BDPs-defense-finder -w 20 --db-type gembase --models-dir ~/software/defense-finder -a  all_BDPs.faa
 ```
 ### 8. Detection for dark proviruses
+
+
 ### 9. Protein sharing network analysis
 
 Viral protein sharing networks were constructed using vConTACT2 (v2.0) and the resulting networks were visualized using Cytoscape (v3.8.2) with a prefuse force-directed layout model.
@@ -141,16 +152,26 @@ vcontact2 -r DPs_and_BDP_family.faa.faa -p gene2genome.csv --db None -o DPs_and_
 ## For Figures:
 
 ### Fig.1
+
 ### Fig.2
+
 ### Fig.3
+
 ### Fig.4
+
 ### Fig.5
+
 ### Fig.6
 
+
 ### Extended Data Fig.1
+
 ### Extended Data Fig.2
+
 ### Extended Data Fig.3
+
 ### Extended Data Fig.4
+
 ### Extended Data Fig.5
 
 ### Supplementary Fig.1
