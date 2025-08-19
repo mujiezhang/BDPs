@@ -15,7 +15,7 @@ Mujie Zhang, Yali Hao, Yi Yi, Yecheng Wang, Taoliang Zhang, Xiang Xiao, Huahua J
   <img src="https://github.com/user-attachments/assets/28dbd6a3-d854-45b6-a991-32af13be782d" alt="ProBord-ProAct" width="600" />
 </div>
 
-- The ProBord scripts and usage instructions are available at **https://github.com/mujiezhang/ProBord**.
+- The ProBord scripts and usage instructions are available at **https://github.com/mujiezhang/ProBord** .
 - The ProAct scripts and usage instructions are available at **https://github.com/YaliHao/ProAct** .
 
 ### 2. Viral Sequence Reverse Mapping (VSRM): construct att positive set
