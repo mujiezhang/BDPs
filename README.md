@@ -156,17 +156,23 @@ vcontact2 -r DPs_and_BDP_family.faa.faa -p gene2genome.csv --db None -o DPs_and_
 ## For Figures:
 
 ### Fig.1
-- a和b: 示意图由Adobe Illustrator绘制
-- c: genome map 由chiplot可视化。折线图由`c-att-hot-plot.R`绘制，数据为`Mu.tsv`
-- d/e: 由`d-e-bar-plot.R`绘制，数据为`recall-and-precision-f1score.tsv` and `error_bar_before_and_after.tsv`
+- a/b: by Adobe Illustrator
+- c: gene cluster: [chiplot](https://www.chiplot.online/gene_cluster.html), line plot: script: `c-att-hot-plot.R`，data: `Mu.tsv`
+- d/e: script: `d-e-bar-plot.R`, data: `recall-and-precision-f1score.tsv` and `error_bar_before_and_after.tsv`
 
 ### Fig.2
-- a: 示意图由Adobe Illustrator绘制
-- b: 由`votu_score_length_att_distribution.R`绘制，数据为`votu_score_length_att_infor.tsv`
-- c: 由`c.host-num-genomesize.R`绘制，数据为`annotation.tsv`和`host_number100_att_length_genome_length.tsv`
-- d: 
+- a: by dobe Illustrator
+- b: script: `votu_score_length_att_distribution.R`, data: `votu_score_length_att_infor.tsv`
+- c: script: `c.host-num-genomesize.R`, data: `annotation.tsv` and `host_number100_att_length_genome_length.tsv`
+- d: script: `d-heatmap.R`, data: `bar-plot.txt` and `vfg-arg-amp-defense.tsv`
 
 ### Fig.3
+- a: by script `votu_score_length_att_distribution.R` from [Fig.2](https://github.com/mujiezhang/BDPs/tree/main/scripts%20and%20data%20for%20figures/Fig2)
+- b: phylogenetic tree-`arc-gtdb.tree` and `bac-gtdb.tree`; annotation: `tree_annotation.tsv`; visualization tool: [TVBOT](https://www.chiplot.online/tvbot.html); density plot data: `att_lengthlength.tsv`; script: `density-plot.R`
+- c/d: script: c-d-bar-plot.R; data: `in_range.tsv` and `out_range.tsv`
+- e/f/g/h: script: `e-f-g-h.R`; data: `e.tsv`, `f.tsv`,` g.tsv` and `h.tsv`,
+- i: by Adobe Illustrator
+- j/k/l/m: script: `j-k-l-m.R`; data: `j.tsv` and `integrase_related_data.tsv`
 
 ### Fig.4
 
