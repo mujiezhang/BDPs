@@ -1,0 +1,10 @@
+type	Percentage	tools
+Recall	28.42	PHASTEST
+Precision	34.47	PHASTEST
+F1 score	31.15	PHASTEST
+Recall	72.98	TIGER
+Precision	92.04	TIGER
+F1 score	81.41	TIGER
+Recall	89.47	ProBord
+Precision	93.41	ProBord
+F1 score	91.4	ProBord
