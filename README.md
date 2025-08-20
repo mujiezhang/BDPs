@@ -186,7 +186,9 @@ vcontact2 -r DPs_and_BDP_family.faa.faa -p gene2genome.csv --db None -o DPs_and_
 - d: by Cytoscape
 
 ### Fig.6
-
+- a/b/c/d: script: `a-b-c-d.R`, data: `host.tsv`, `DPs_infor.tsv` and `BDP-vs-DPs-unannotation-rate.tsv`
+- e: visualization tool: Cytoscape; network file: c1.ntw; annotate file: `annotate.txt`; cytoscape file: `network.cys`
+- f/g: script: `f-g.R`, data: `NZ_FVKI01000004.1__310000-325000-310821-322280.tsv` and `NZ_JAZHCX010000002.1__1145000-1155000-1141828-1159871.tsv`; gene cluster: [chiplot](https://www.chiplot.online/gene_cluster.html)
 
 ### Extended Data Fig.1
 
