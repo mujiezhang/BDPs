@@ -1,6 +1,6 @@
 library(ggplot2)
 library(patchwork)
-setwd('E:/课题/5.att/github/analysis-and-figure/fig1')
+
 df1=read.table('recall-and-precision-f1score.tsv',head=TRUE,sep='\t')
 df2=read.table('error_bar_before_and_after.tsv',head=TRUE,sep='\t')
 
@@ -29,4 +29,5 @@ p2<-ggplot(df2,aes(x=state,y=err,fill=state,label=err))+
                    panel.grid.minor = element_blank(),legend.position= 'none')+
   ylab('Error prediction length (bp)')+xlab(NULL)
 p2
+
 
