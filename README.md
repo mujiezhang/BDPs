@@ -191,6 +191,9 @@ vcontact2 -r DPs_and_BDP_family.faa.faa -p gene2genome.csv --db None -o DPs_and_
 - f/g: script: `f-g.R`, data: `NZ_FVKI01000004.1__310000-325000-310821-322280.tsv` and `NZ_JAZHCX010000002.1__1145000-1155000-1141828-1159871.tsv`; gene cluster: [chiplot](https://www.chiplot.online/gene_cluster.html)
 
 ### Extended Data Fig.1
+- a/b/c/d: script: `a-b-c-d.R`, data: `host-type-and-att-distribution.tsv`, `viral_prediction_ave_error.tsv` and `viral_prediction_error.tsv`
+- e: script: `e.R`, data: `example-tools-prediction-for-r.tsv`
+- f/g/h: script: `f-g-h.R`, data: `F1_recall_precision_change_with_score.tsv`, `3_db_F1score_recall_precision.tsv` and `time_consum_against_refseq_genus.tsv`
 
 ### Extended Data Fig.2
 
