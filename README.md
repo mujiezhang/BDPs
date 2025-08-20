@@ -162,7 +162,9 @@ vcontact2 -r DPs_and_BDP_family.faa.faa -p gene2genome.csv --db None -o DPs_and_
 
 ### Fig.2
 - a: 示意图由Adobe Illustrator绘制
-- b/c/d:
+- b: 由`votu_score_length_att_distribution.R`绘制，数据为`votu_score_length_att_infor.tsv`
+- c: 由`c.host-num-genomesize.R`绘制，数据为`annotation.tsv`和`host_number100_att_length_genome_length.tsv`
+- d: 
 
 ### Fig.3
 
