@@ -196,13 +196,19 @@ vcontact2 -r DPs_and_BDP_family.faa.faa -p gene2genome.csv --db None -o DPs_and_
 - f/g/h: script: `f-g-h.R`, data: `F1_recall_precision_change_with_score.tsv`, `3_db_F1score_recall_precision.tsv` and `time_consum_against_refseq_genus.tsv`
 
 ### Extended Data Fig.2
+- a/b: script: `a-b.R`, data: `for-upset.xlsx` and `function-gene-location.tsv`
+- c: gene cluster: [chiplot](https://www.chiplot.online/gene_cluster.html)
 
 ### Extended Data Fig.3
+- a/b/c: script: `a-b-c.R`, data: `cds.txt`, `tRNA.txt` and `arc-bac-integration_region_for-heatmap.tsv`
 
 ### Extended Data Fig.4
-
+- a/b: script: `a-b.R`, data: `genus_2-10-median.tsv` and `family_1-10-median.tsv`
+  
 ### Extended Data Fig.5
-
+- a/b: by Adobe Illustrator
+- c/d:
+  
 ### Supplementary Fig.1
 ### Supplementary Fig.2
 ### Supplementary Fig.3
