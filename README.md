@@ -210,7 +210,18 @@ vcontact2 -r DPs_and_BDP_family.faa.faa -p gene2genome.csv --db None -o DPs_and_
 - c/d:
   
 ### Supplementary Fig.1
-### Supplementary Fig.2
+- a: by script `votu_score_length_att_distribution.R` from [Fig.2](https://github.com/mujiezhang/BDPs/tree/main/scripts%20and%20data%20for%20figures/Fig2)
+- b: script: `b.R`, data: `vOTU_accumulate_data.txt`, `genus_accumulate_data.txt` and `family_accumulate_data.txt`
+  
+### Supplementary Fig.2 
+- a/b: script: `a-b.R`, data: `top10_family_len.tsv` and `top10_genus_len.tsv`
+
 ### Supplementary Fig.3
+
+
 ### Supplementary Fig.4
+
+
 ### Supplementary Fig.5
+
+
