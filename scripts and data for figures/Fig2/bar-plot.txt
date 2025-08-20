@@ -1,0 +1,49 @@
+type	number
+Immune modulation	14.79299359
+Exotoxin	14.05714562
+Effector delivery system	13.79857305
+Exoenzyme	12.94397991
+Stress survival	11.69348696
+Adherence	9.082149041
+Regulation	5
+Motility	3
+Biofilm	2.584962501
+Nutritional/Metabolic factor	1
+multidrug	10.38262403
+fosfomycin	8.727920455
+fusidic_acid	8.588714636
+trimethoprim	7.098032083
+macrolide-lincosamide-streptogramin	6.584962501
+beta_lactam	6.475733431
+aminoglycoside	6.426264755
+tetracycline	5.209453366
+chloramphenicol	3.700439718
+polymyxin	3
+other1	4.087462841
+CLP	11.98192399
+CDP	11.86495992
+ADP	1
+ALP	1
+Anti_RecBCD	14.04891254
+Anti_CRISPR	13.7071434
+Anti_RM	13.32937591
+Anti_Thoeris	12.72792045
+Anti_Dnd	12.28828934
+Anti_CBASS	12.09374766
+Anti_Retron	11.58355293
+Anti_TA	9.164906927
+NADP	6.459431619
+Anti_Gabija	6.266786541
+Anti_Pycsar	3.459431619
+Other	9.306061689
+RM	12.97960382
+AbiD	12.6291289
+PD-Lambda-1	11.76030413
+Retron	11.78463485
+Rst_3HP	11.63208641
+AbiU	11.56795608
+ShosTA	11.2227949
+RosmerTA	11.0768156
+PD-T4-3	11.12670447
+AbiH	11.02167404
+other2	15.76689119
