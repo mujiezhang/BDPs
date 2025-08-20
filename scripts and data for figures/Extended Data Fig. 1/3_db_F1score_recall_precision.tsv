@@ -1,0 +1,10 @@
+DB	type	num
+RefSeq_full	F1_score	91.4
+RefSeq_full	recall	89.47
+RefSeq_full	precision	93.41
+RefSeq_genus	F1_score	91.4
+RefSeq_genus	recall	89.47
+RefSeq_genus	precision	93.41
+NT	F1_score	90.15
+NT	recall	86.67
+NT	precision	93.92
