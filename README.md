@@ -106,7 +106,7 @@ python simplify-result.py gvc_1_BDP_vs_BDP_blastp.tsv_cov.tsv gvc_1_BDP_vs_BUP_b
 
 ```
 
-### 5. Conservation analysis of att.
+### 5. Conservation analysis of att
 - **for att sequence conservation**: extract the att sequences of a certain viral cluster and perform CD-HIT-EST
   ```
   # take vOTU_1 for example
