@@ -86,6 +86,9 @@ We found extensive sharing of BDPs and BUPs at the genus and family levels. With
 
 ![HSC-analysis](https://github.com/user-attachments/assets/192421c9-9f16-4029-ace2-e8ba11da5b8f)
 
+script for step2 is [calculate_HSC.py](https://github.com/mujiezhang/BDPs/blob/main/scripts%20and%20data%20for%20analysis/Homologous%20sequence%20coverage%20(HSC)%20analysis/calculate_HSC.py)
+ and script for step3 is [simplify-result.py](https://github.com/mujiezhang/BDPs/blob/main/scripts%20and%20data%20for%20analysis/Homologous%20sequence%20coverage%20(HSC)%20analysis/simplify-result.py)
+
 ```
 # take gVC_1 for example
 # step1. perform diamond blastp between BDPs-BUPs and between BDPs-BDPs in gVC_1
@@ -95,10 +98,11 @@ diamond blastp --query gvc1_BDPs.faa --db gvc1_BDPs.dmnd --out gvc_1_BDP_vs_BDP_
 diamond blastp --query gvc1_BDPs.faa --db gvc1_BUPs.dmnd --out gvc_1_BDP_vs_BUP_blastp.tsv --outfmt 6 --evalue 1e-5 --max-target-seqs 10000000 --query-cover 50 --subject-cover 50
 
 # step2. calculate HSC
-
+python calculate_HSC.py -in1 gvc1_BDPs.faa -in2 gvc1_BDPs.faa -in3 gvc_1_BDP_vs_BDP_blastp.tsv --taxon_level genus
+python calculate_HSC.py -in1 gvc1_BDPs.faa -in2 gvc1_BUPs.faa -in3 gvc_1_BDP_vs_BUP_blastp.tsv --taxon_level genus
 
 # step3. get plot data
-
+python simplify-result.py gvc_1_BDP_vs_BDP_blastp.tsv_cov.tsv gvc_1_BDP_vs_BUP_blastp.tsv_cov.tsv genus
 
 ```
 
