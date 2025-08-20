@@ -1,0 +1,34 @@
+gene	counts
+glutamine-hydrolyzing GMP synthase	9755
+DNA-binding transcriptional regulator Fis	8889
+hypothetical protein	6048
+Lipoprotein	5763
+beta-hemolysin	5239
+tRNA dihydrouridine(20/20a) synthase DusA	5071
+tRNA 2-thiocytidine(32) synthetase TtcA	4793
+MHS family MFS transporter YdfJ	4019
+two-component system sensor histidine kinase PhoQ	3607
+chaperonin GroEL	3250
+NADP-dependent isocitrate dehydrogenase	3133
+Pfpi family intracellular protease	2775
+Fe-S cluster assembly protein SufB	2393
+50S ribosomal protein L19	2283
+spermidine/putrescine ABC transporter permease PotB	2268
+Protein YljB	2204
+outer membrane protein OmpW	2139
+exodeoxyribonuclease I	1879
+phosphoglycolate phosphatase	1788
+AI-2 transporter TqsA	1612
+peptide chain release factor 3	1533
+ribosome biogenesis GTPase Der	1519
+type I glutamate--ammonia ligase	1493
+Integrase	1458
+4-phosphoerythronate dehydrogenase PdxB	1401
+metallopeptidase YcaL	1352
+30S ribosomal protein S18	1309
+N-acetylmuramoyl-L-alanine amidase XlyB	1192
+DUF72 domain-containing protein	1105
+pyruvate formate lyase 1-activating protein	1098
+DNA mismatch repair protein MutS	1054
+flagellar hook-basal body complex protein FliE	1048
+DNA-binding protein HU	1010
