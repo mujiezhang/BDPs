@@ -156,6 +156,9 @@ vcontact2 -r DPs_and_BDP_family.faa.faa -p gene2genome.csv --db None -o DPs_and_
 ## For Figures:
 
 ### Fig.1
+- a和b: 示意图由Adobe Illustrator绘制
+- c. genome map 由chiplot可视化。折线图由``绘制，数据为``
+- d和e 由``绘制，数据为``
 
 ### Fig.2
 
