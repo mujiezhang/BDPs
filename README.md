@@ -182,8 +182,10 @@ vcontact2 -r DPs_and_BDP_family.faa.faa -p gene2genome.csv --db None -o DPs_and_
 
 ### Fig.5
 - a/c: by Adobe Illustrator
-- b/e/f: by [chiplot](https://www.chiplot.online/gene_cluster.html)
-- d: by Cytoscape
+- b: by [chiplot](https://www.chiplot.online/gene_cluster.html) data: `Fig.5b_bac-gtdb.tree`, `Fig.5b_Active BDPs & per host.xlsx`, `Fig.5b_Active BDPs _bubble_plot.tsv`, `Fig.5b_PtoH_distribution.tsv`
+- d: by Cytoscape, data: `c1.ntw` and `Fig.5d_network.cys`
+- e: by [chiplot](https://www.chiplot.online/gene_cluster.html) data: `Fig.5e_bubble_plot.tsv`, `Fig.5e_phage_bar_plot.tsv`, and `Fig.5e_upsetPlot.tsv`
+- f: script: `Fig.5f_draw_vfg_sankey.py`, data: `Fig.5f_vfg_energy.txt`
 
 ### Fig.6
 - a/b/c/d: script: `a-b-c-d.R`, data: `host.tsv`, `DPs_infor.tsv` and `BDP-vs-DPs-unannotation-rate.tsv`
@@ -207,7 +209,7 @@ vcontact2 -r DPs_and_BDP_family.faa.faa -p gene2genome.csv --db None -o DPs_and_
   
 ### Extended Data Fig.5
 - a/b: by Adobe Illustrator
-- c/d:
+- c/d: data: `Extended Fig5c.xlsx` and `Extended Fig5d.xlsx`, visualization tool: [chiplot](https://www.chiplot.online/)
   
 ### Supplementary Fig.1
 - a: by script `votu_score_length_att_distribution.R` from [Fig.2](https://github.com/mujiezhang/BDPs/tree/main/scripts%20and%20data%20for%20figures/Fig2)
@@ -217,11 +219,11 @@ vcontact2 -r DPs_and_BDP_family.faa.faa -p gene2genome.csv --db None -o DPs_and_
 - a/b: script: `a-b.R`, data: `top10_family_len.tsv` and `top10_genus_len.tsv`
 
 ### Supplementary Fig.3
-
+- a/b/c/d/e: visualization tool: [**IGV**](https://igv.org/) data: all `*._sorted.tdf` files
 
 ### Supplementary Fig.4
-
+- script: `draw_depth.R`, data: all `.tsv` files
 
 ### Supplementary Fig.5
-
+- a/b/c: script: depth plot: `single_draw_depth.R`, gene cluster: [chiplot](https://www.chiplot.online/gene_cluster.html)
 
