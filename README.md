@@ -140,10 +140,8 @@ macrel contigs -f all_BDPs.fna -o BDP_AMP_prediction -t 64 --keep-fasta-headers
 # for Defense system and Anti-defense system
 defense-finder run -o BDPs-defense-finder -w 20 --db-type gembase --models-dir ~/software/defense-finder -a  all_BDPs.faa
 ```
-### 8. Detection for dark proviruses
 
-
-### 9. Protein sharing network analysis
+### 8. Protein sharing network analysis
 
 Viral protein sharing networks were constructed using vConTACT2 (v2.0) and the resulting networks were visualized using Cytoscape (v3.8.2) with a prefuse force-directed layout model.
 ```
