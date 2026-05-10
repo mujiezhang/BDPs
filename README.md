@@ -84,7 +84,8 @@ blastn -db RefSeq_bacterial_and_archaeal_genomes -query all_RefSeq_complete_viru
 ### 4. Homologous sequence coverage (HSC) analysis
 We found extensive sharing of BDPs and BUPs at the genus and family levels. Within the same viral cluster, the genome size of BDPs was consistently larger than that of BUPs. We hypothesize that a significant number of BUPs degenerated from BDPs. To validate this, we conducted HSC analysis, as illustrated below, using the following algorithm:
 
-![HSC-analysis](https://github.com/user-attachments/assets/192421c9-9f16-4029-ace2-e8ba11da5b8f)
+<img width="2028" height="606" alt="HSC-analysis" src="https://github.com/user-attachments/assets/274e65f7-2537-491b-8d43-6c859a0c7ffe" />
+
 
 script for step2 is [calculate_HSC.py](https://github.com/mujiezhang/BDPs/blob/main/scripts%20and%20data%20for%20analysis/Homologous%20sequence%20coverage%20(HSC)%20analysis/calculate_HSC.py)
  and script for step3 is [simplify-result.py](https://github.com/mujiezhang/BDPs/blob/main/scripts%20and%20data%20for%20analysis/Homologous%20sequence%20coverage%20(HSC)%20analysis/simplify-result.py)
