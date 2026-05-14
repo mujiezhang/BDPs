@@ -191,38 +191,41 @@ vcontact2 -r DPs_and_BDP_family.faa.faa -p gene2genome.csv --db None -o DPs_and_
 - e: visualization tool: Cytoscape; network file: c1.ntw; annotate file: `annotate.txt`; cytoscape file: `network.cys`
 - f/g: script: `f-g.R`, data: `NZ_FVKI01000004.1__310000-325000-310821-322280.tsv` and `NZ_JAZHCX010000002.1__1145000-1155000-1141828-1159871.tsv`; gene cluster: [chiplot](https://www.chiplot.online/gene_cluster.html)
 
-### Extended Data Fig.1
+### Fig.S1
 - a/b/c/d: script: `a-b-c-d.R`, data: `host-type-and-att-distribution.tsv`, `viral_prediction_ave_error.tsv` and `viral_prediction_error.tsv`
 - e: script: `e.R`, data: `example-tools-prediction-for-r.tsv`
 - f/g/h: script: `f-g-h.R`, data: `F1_recall_precision_change_with_score.tsv`, `3_db_F1score_recall_precision.tsv` and `time_consum_against_refseq_genus.tsv`
 
-### Extended Data Fig.2
+### Fig.S2
+- a: by script `votu_score_length_att_distribution.R` from [Fig.2](https://github.com/mujiezhang/BDPs/tree/main/scripts%20and%20data%20for%20figures/Fig2)
+- b: script: `b.R`, data: `vOTU_accumulate_data.txt`, `genus_accumulate_data.txt` and `family_accumulate_data.txt`
+
+### Fig.S3
+- gene cluster: [chiplot](https://www.chiplot.online/gene_cluster.html)
+  
+### Fig.S4
 - a/b: script: `a-b.R`, data: `for-upset.xlsx` and `function-gene-location.tsv`
 - c: gene cluster: [chiplot](https://www.chiplot.online/gene_cluster.html)
 
-### Extended Data Fig.3
+### Fig.S5
 - a/b/c: script: `a-b-c.R`, data: `cds.txt`, `tRNA.txt` and `arc-bac-integration_region_for-heatmap.tsv`
 
-### Extended Data Fig.4
+### Fig.S6 
+- a/b: script: `a-b.R`, data: `top10_family_len.tsv` and `top10_genus_len.tsv`
+  
+### Fig.S7
 - a/b: script: `a-b.R`, data: `genus_2-10-median.tsv` and `family_1-10-median.tsv`
   
-### Extended Data Fig.5
+### Fig.S8
 - a/b: by Adobe Illustrator
 - c/d: data: `Extended Fig5c.xlsx` and `Extended Fig5d.xlsx`, visualization tool: [chiplot](https://www.chiplot.online/)
-  
-### Supplementary Fig.1
-- a: by script `votu_score_length_att_distribution.R` from [Fig.2](https://github.com/mujiezhang/BDPs/tree/main/scripts%20and%20data%20for%20figures/Fig2)
-- b: script: `b.R`, data: `vOTU_accumulate_data.txt`, `genus_accumulate_data.txt` and `family_accumulate_data.txt`
-  
-### Supplementary Fig.2 
-- a/b: script: `a-b.R`, data: `top10_family_len.tsv` and `top10_genus_len.tsv`
 
-### Supplementary Fig.3
+### Fig.S9
 - a/b/c/d/e: visualization tool: [**IGV**](https://igv.org/) data: all `*._sorted.tdf` files
 
-### Supplementary Fig.4
+### Fig.S10
 - script: `draw_depth.R`, data: all `.tsv` files
 
-### Supplementary Fig.5
+### Fig.S11
 - a/b/c: script: depth plot: `single_draw_depth.R`, gene cluster: [chiplot](https://www.chiplot.online/gene_cluster.html)
 
